@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #474747;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.header{
+    background-color: #f79707c2;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px ,0;
+}
+
+header{
+    padding: 20px;
+}
+
+.header h1{
+    font-family: "Mate SC", serif;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.header p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4em;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.box{
+    
+    background-color: #fbe5bb;
+    padding: 20px;
+    width: 60%;
+    margin: 10px;
+    text-align: justify;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px black;
+    transition: transform 0.3s, box-shadow 0.10s;
+}
+
+.box h2{
+    font-family: "Mate SC", serif;
+    text-align: center;
+    /* justify-content: center; */
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.box p{
+    text-align: center;
+    font-size: 1.3em;
+}
+.box:hover{
+    transform:translateY(-20px);
+    box-shadow:20px 20px 20px 10px black;
+}
+
+.footer{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.parallax1{
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/08/22/26/buddhism-2214532_1280.jpg);
+}
+
+.parallax2{
+    background-image: url(https://cdn.pixabay.com/photo/2019/09/19/14/37/yoga-4489430_1280.jpg);
+   
+}
+
+.parallax3{
+    background-image: url(https://cdn.pixabay.com/photo/2018/11/30/21/07/sunrise-3848628_1280.jpg);
+}
+
+.parallax4{
+    background-image: url( https://cdn.pixabay.com/photo/2014/05/02/12/41/candle-335965_1280.jpg);
+    
+}
+
+.parallax{
+    height: 50vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .box{
+        width: 90%;
+    }
+    .header h1{
+        font-size: 2em;
+    }
+
+    .header p{
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width:480px){
+    .header h1{
+        font-size: 2.5em;
+
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;}
+
+    .header p{
+        font-size: 1.5em;
+    }
+    .box{
+        padding: 10px;
+    }
+}
+
+/* nav{
+    position: fixed;
+    
+} */
